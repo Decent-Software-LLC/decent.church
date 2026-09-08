@@ -600,8 +600,8 @@ function generateImagePrompt(topic) {
   const keywords = topic.tags.slice(0, 3).join(', ');
 
   return {
-    prompt: `Stained glass illustration for a Scripture-grounded article about ${topic.title}. Use symbolic Christian visual language connected to ${keywords}: fish, cups, water, sheep, bread, paths, light, vines, or abstract sacred geometry. Inspired by Notre Dame stained glass rose windows and medieval rosette patterns, luminous jewel-toned glass pieces, lead came lines, radial symmetry or simple subject-centered composition, reverent and peaceful, no people, no faces, no readable text, no letters, no watermark, no logo, no denominational branding`,
-    negative_prompt: `people, person, human figure, faces, portraits, hands, crowds, text, letters, words, typography, watermark, logo, denomination symbols, political signs, photorealistic people`
+    prompt: `Square stained-glass illustration for "${topic.title}". Use Christian symbolism inspired by ${keywords}. Jewel-toned glass, bold lead lines, simple centered composition, reverent mood. No people, faces, words, letters, typography, watermark, logo, or denominational branding.`,
+    negative_prompt: `people, faces, words, letters, text, typography, watermark, logo, denominational symbols`
   };
 }
 
